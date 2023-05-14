@@ -148,6 +148,10 @@ const projects = [
     description: 'Online news portal of daily notun asha.',
     tags: [
       {
+        name: 'techsist-ltd',
+        color: 'pink-text-gradient',
+      },
+      {
         name: 'react',
         color: 'blue-text-gradient',
       },
@@ -163,10 +167,6 @@ const projects = [
         name: 'react-quary',
         color: 'blue-text-gradient',
       },
-      {
-        name: 'techsist-ltd',
-        color: 'pink-text-gradient',
-      },
     ],
     image: image2,
     source_code_link: '',
@@ -176,6 +176,10 @@ const projects = [
     name: 'Mesmerize: Express Your Love',
     description: 'E-commerce site for customized gifts and more',
     tags: [
+      {
+        name: 'techsist ltd',
+        color: 'pink-text-gradient',
+      },
       {
         name: 'react',
         color: 'blue-text-gradient',
@@ -191,10 +195,6 @@ const projects = [
       {
         name: 'react-quary',
         color: 'blue-text-gradient',
-      },
-      {
-        name: 'techsist ltd',
-        color: 'pink-text-gradient',
       },
     ],
     image: image1,
