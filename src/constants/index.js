@@ -1,4 +1,8 @@
 import {
+  css,
+  figma,
+  git,
+  html,
   image1,
   image2,
   image3,
@@ -6,10 +10,6 @@ import {
   image5,
   image6,
   image7,
-  css,
-  figma,
-  git,
-  html,
   javascript,
   material,
   mongodb,
@@ -163,6 +163,10 @@ const projects = [
         name: 'react-quary',
         color: 'blue-text-gradient',
       },
+      {
+        name: 'techsist-ltd',
+        color: 'pink-text-gradient',
+      },
     ],
     image: image2,
     source_code_link: '',
@@ -177,7 +181,7 @@ const projects = [
         color: 'blue-text-gradient',
       },
       {
-        name: 'restapi',
+        name: 'rest-api',
         color: 'green-text-gradient',
       },
       {
@@ -187,6 +191,10 @@ const projects = [
       {
         name: 'react-quary',
         color: 'blue-text-gradient',
+      },
+      {
+        name: 'techsist ltd',
+        color: 'pink-text-gradient',
       },
     ],
     image: image1,
