@@ -1340,6 +1340,11 @@ react-router@6.11.1:
   dependencies:
     "@remix-run/router" "1.6.1"
 
+react-tilt@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmmirror.com/react-tilt/-/react-tilt-1.0.2.tgz#89e1749939275204ebbc04565778abf972196cbe"
+  integrity sha512-21tUUsmuw5id/6NDtKqwYTG4taVnw+BoUwIG6YsgPC9GI6cx4BnBuSqgriQYAYcv3bdGNzecaBL+rvQRAm28bg==
+
 react-use-measure@^2.1.1:
   version "2.1.1"
   resolved "https://registry.npmmirror.com/react-use-measure/-/react-use-measure-2.1.1.tgz#5824537f4ee01c9469c45d5f7a8446177c6cc4ba"
