@@ -24,13 +24,19 @@ import tailwind from './tech/tailwind.png';
 import threejs from './tech/threejs.svg';
 import typescript from './tech/typescript.png';
 
-import carrent from './carrent.png';
-import techsist from './company/techsist.png';
-import jobit from './jobit.png';
+import image1 from './Screenshot_1.png';
+import image2 from './Screenshot_2.png';
+import image3 from './Screenshot_3.png';
+import image4 from './Screenshot_4.png';
+import image5 from './Screenshot_5.png';
+import image6 from './Screenshot_6.png';
+import image7 from './Screenshot_7.png';
+
+import techsist from './company//techsist.png';
+
 import material from './tech/material.png';
 import next from './tech/next.png';
 import scss from './tech/scss.png';
-import tripguide from './tripguide.png';
 
 export {
   logo,
@@ -54,9 +60,6 @@ export {
   tailwind,
   typescript,
   threejs,
-  carrent,
-  jobit,
-  tripguide,
   material,
   scss,
   next,
@@ -64,4 +67,11 @@ export {
   githubProfie,
   linkedin,
   live,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
 };

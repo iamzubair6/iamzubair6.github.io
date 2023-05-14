@@ -1,11 +1,16 @@
 import {
-  carrent,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
+  image6,
+  image7,
   css,
   figma,
   git,
   html,
   javascript,
-  jobit,
   material,
   mongodb,
   next,
@@ -14,7 +19,6 @@ import {
   tailwind,
   techsist,
   threejs,
-  tripguide,
   web,
 } from '../assets';
 
@@ -140,31 +144,33 @@ const experiences = [
 
 const projects = [
   {
-    name: 'Car Rent',
-    description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+    name: 'Notun Asha',
+    description: 'Online news portal of daily notun asha.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'mongodb',
+        name: 'material-ui',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwind',
+        name: 'rest-api',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'react-quary',
+        color: 'blue-text-gradient',
+      },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
-    live_link: 'https://github.com/',
+    image: image2,
+    source_code_link: '',
+    live_link: 'https://dailynotunasha.com/',
   },
   {
-    name: 'Job IT',
-    description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+    name: 'Mesmerize: Express Your Love',
+    description: 'E-commerce site for customized gifts and more',
     tags: [
       {
         name: 'react',
@@ -175,33 +181,148 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
-        name: 'scss',
+        name: 'material-Ui',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'react-quary',
+        color: 'blue-text-gradient',
+      },
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
+    image: image1,
+    source_code_link: '',
+    live_link: 'https://mesmerizebd.com/',
   },
   {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+    name: 'Multiverse-Madness',
+    description: 'This project is about virtual reality.',
     tags: [
       {
         name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'framer-motion',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'telwind',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: image5,
+    source_code_link: 'https://github.com/iamzubair6/multiverse-madness-nextjs',
+    live_link: 'https://multiverse-madness-nextjs.vercel.app/',
+  },
+  {
+    name: 'Downtownbd',
+    description: 'This project is based on resturent menu fully responsive.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'material-ui',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'vite',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: image7,
+    source_code_link: 'https://github.com/iamzubair6/Simple-menu-vite',
+    live_link: 'https://www.downtownbd.xyz/',
+  },
+  {
+    name: 'Mesmerize Dashboard',
+    description:
+      'A full featured dashboard for managing Mesmerize admin panel.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'material-ui',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'vite',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'react-quary',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'rest-api',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: image3,
+    source_code_link: '',
+    live_link: '',
+  },
+  {
+    name: 'Personal portfolio',
+    description:
+      'This is my personal portfolio website for showcasing my work.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'telwind',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'vite',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'framer-motion',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: image4,
+    source_code_link: 'https://github.com/iamzubair6/Portfolio',
+    live_link: '',
+  },
+  {
+    name: 'Edstructure Dashboard',
+    description: 'A complete education management system',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Bootstrap',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'vite',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'rest-api',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'scss',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'react-quary',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: image6,
+    source_code_link: '',
+    live_link: '',
   },
 ];
 
