@@ -18,13 +18,13 @@ const ProjectCard = ({
   live_link,
 }) => {
   return (
-    <motion.div
+    <div
       style={{ display: 'flex', flexGrow: 1 }}
       variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
     >
       <Tilt
         options={{
-          max: 20,
+          max: 45,
           scale: 1,
           speed: 20,
         }}
@@ -79,7 +79,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
 
