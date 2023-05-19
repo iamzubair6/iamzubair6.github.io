@@ -101,7 +101,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Frontend Developer',
+    title: 'Jr. Frontend Developer',
     company_name: 'Techsist Ltd',
     icon: techsist,
     iconBg: '#383E56',
