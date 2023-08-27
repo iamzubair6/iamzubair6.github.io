@@ -25,6 +25,7 @@ import threejs from "./tech/threejs.svg";
 import typescript from "./tech/typescript.png";
 
 import image1 from "./Screenshot_1.png";
+import image10 from "./Screenshot_10.png";
 import image2 from "./Screenshot_2.png";
 import image3 from "./Screenshot_3.png";
 import image4 from "./Screenshot_4.png";
@@ -33,44 +34,27 @@ import image6 from "./Screenshot_6.png";
 import image7 from "./Screenshot_7.png";
 import image8 from "./Screenshot_8.png";
 import image9 from "./Screenshot_9.png";
-import image10 from "./Screenshot_10.png";
 
-import techsist from "./company//techsist.png";
+import techsist from "./company/techsist.png";
+import alfatah from "./company/alfatah.png";
 
 import material from "./tech/material.png";
 import next from "./tech/next.png";
 import scss from "./tech/scss.png";
 
 export {
-  logo,
   backend,
-  creator,
-  mobile,
-  web,
-  github,
-  menu,
   close,
+  creator,
   css,
   docker,
   figma,
   git,
-  html,
-  javascript,
-  mongodb,
-  nodejs,
-  reactjs,
-  redux,
-  tailwind,
-  typescript,
-  threejs,
-  material,
-  scss,
-  next,
-  techsist,
+  github,
   githubProfie,
-  linkedin,
-  live,
+  html,
   image1,
+  image10,
   image2,
   image3,
   image4,
@@ -79,5 +63,23 @@ export {
   image7,
   image8,
   image9,
-  image10,
+  javascript,
+  linkedin,
+  live,
+  logo,
+  material,
+  menu,
+  mobile,
+  mongodb,
+  next,
+  nodejs,
+  reactjs,
+  redux,
+  scss,
+  tailwind,
+  techsist,
+  alfatah,
+  threejs,
+  typescript,
+  web,
 };

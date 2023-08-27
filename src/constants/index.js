@@ -1,4 +1,5 @@
 import {
+  alfatah,
   css,
   figma,
   git,
@@ -104,7 +105,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Jr. Frontend Developer",
+    title: "Frontend Developer",
     company_name: "Techsist Ltd",
     icon: techsist,
     iconBg: "#383E56",
@@ -114,6 +115,20 @@ const experiences = [
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Jr. Service Engineer",
+    company_name: "AL-Fatah International",
+    icon: alfatah,
+    iconBg: "gray",
+    date: "March 2022 - October 2022",
+    points: [
+      "Customer handling.",
+      "Field service and identify the problem.",
+      "Equipment/Machine maintenance as customer required.",
+      "Inventory management.",
+      "Prepare Bill, Service report, Challan.",
     ],
   },
 ];
