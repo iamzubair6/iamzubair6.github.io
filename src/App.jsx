@@ -1,4 +1,4 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 
 import {
   About,
@@ -9,7 +9,7 @@ import {
   StarsCanvas,
   Tech,
   Works,
-} from './components';
+} from "./components";
 
 const App = () => {
   return (
