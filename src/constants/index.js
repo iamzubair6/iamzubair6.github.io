@@ -1,11 +1,13 @@
 import {
   alfatah,
+  antd,
   css,
   figma,
   git,
   html,
   image1,
   image10,
+  image11,
   image2,
   image3,
   image4,
@@ -23,6 +25,7 @@ import {
   tailwind,
   techsist,
   threejs,
+  typescript,
   web,
 } from "../assets";
 
@@ -62,8 +65,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "Material UI",
-    icon: material,
+    name: "TypeScript",
+    icon: typescript,
   },
   {
     name: "React JS",
@@ -72,6 +75,18 @@ const technologies = [
   {
     name: "Next js",
     icon: next,
+  },
+  {
+    name: "Material UI",
+    icon: material,
+  },
+  {
+    name: "Ant Design",
+    icon: antd,
+  },
+  {
+    name: "SCSS",
+    icon: scss,
   },
   {
     name: "Tailwind CSS",
@@ -96,10 +111,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "SCSS",
-    icon: scss,
   },
 ];
 
@@ -244,6 +255,32 @@ const projects = [
     image: image8,
     source_code_link: "https://github.com/iamzubair6/xyz-engine",
     live_link: "https://xyz-battery-engine.vercel.app/",
+  },
+  {
+    name: "Sortable Image Gallery",
+    description:
+      "This project is about sortable image gallery. Here user can sort image by position and active image will be highlight with big width, user can aslo select multiple image and delete them",
+    tags: [
+      {
+        name: "react js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "SCSS",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Dnd kit",
+        color: "green-text-gradient",
+      },
+      {
+        name: "",
+        color: "green-text-gradient",
+      },
+    ],
+    image: image11,
+    source_code_link: "https://github.com/iamzubair6/sortable-image-grid",
+    live_link: "https://sortable-image-grid.vercel.app/",
   },
   {
     name: "Multiverse-Madness",

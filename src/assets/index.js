@@ -10,6 +10,7 @@ import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
 
+import antd from "./tech/antd.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -26,6 +27,7 @@ import typescript from "./tech/typescript.png";
 
 import image1 from "./Screenshot_1.png";
 import image10 from "./Screenshot_10.png";
+import image11 from "./Screenshot_11.png";
 import image2 from "./Screenshot_2.png";
 import image3 from "./Screenshot_3.png";
 import image4 from "./Screenshot_4.png";
@@ -35,14 +37,16 @@ import image7 from "./Screenshot_7.png";
 import image8 from "./Screenshot_8.png";
 import image9 from "./Screenshot_9.png";
 
-import techsist from "./company/techsist.png";
 import alfatah from "./company/alfatah.png";
+import techsist from "./company/techsist.png";
 
 import material from "./tech/material.png";
 import next from "./tech/next.png";
 import scss from "./tech/scss.png";
 
 export {
+  alfatah,
+  antd,
   backend,
   close,
   creator,
@@ -55,6 +59,7 @@ export {
   html,
   image1,
   image10,
+  image11,
   image2,
   image3,
   image4,
@@ -78,7 +83,6 @@ export {
   scss,
   tailwind,
   techsist,
-  alfatah,
   threejs,
   typescript,
   web,
