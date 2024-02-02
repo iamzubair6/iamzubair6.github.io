@@ -1,10 +1,10 @@
-import React from 'react';
-import Tilt from 'react-tilt';
-import { github, live } from '../assets';
-import { projects } from '../constants';
-import { SectionWrapper } from '../hoc';
-import { styles } from '../styles';
-import { fadeIn, textVariant } from '../utils/motion';
+import React from "react";
+import Tilt from "react-tilt";
+import { github, live } from "../assets";
+import { projects } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({
   index,
@@ -17,8 +17,8 @@ const ProjectCard = ({
 }) => {
   return (
     <div
-      style={{ display: 'flex', flexGrow: 1 }}
-      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      style={{ display: "flex", flexGrow: 1 }}
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
     >
       <Tilt
         options={{
@@ -38,7 +38,7 @@ const ProjectCard = ({
           <div className="absolute inset-0 flex justify-between m-3 card-img_hover">
             {Boolean(live_link) && (
               <div
-                onClick={() => window.open(live_link, '_blank')}
+                onClick={() => window.open(live_link, "_blank")}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
@@ -50,7 +50,7 @@ const ProjectCard = ({
             )}
             {Boolean(source_code_link) && (
               <div
-                onClick={() => window.open(source_code_link, '_blank')}
+                onClick={() => window.open(source_code_link, "_blank")}
                 className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
               >
                 <img
@@ -93,7 +93,7 @@ const Works = () => {
 
       <div className="w-full flex">
         <p
-          variants={fadeIn('', '', 0.1, 1)}
+          variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
@@ -104,7 +104,7 @@ const Works = () => {
         </p>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
@@ -113,4 +113,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, '');
+export default SectionWrapper(Works, "");

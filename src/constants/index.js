@@ -144,32 +144,32 @@ const experiences = [
   },
 ];
 
-// const testimonials = [
-//   {
-//     testimonial:
-//       'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-//     name: 'Sara Lee',
-//     designation: 'CFO',
-//     company: 'Acme Co',
-//     image: 'https://randomuser.me/api/portraits/women/4.jpg',
-//   },
-//   {
-//     testimonial:
-//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-//     name: 'Chris Brown',
-//     designation: 'COO',
-//     company: 'DEF Corp',
-//     image: 'https://randomuser.me/api/portraits/men/5.jpg',
-//   },
-//   {
-//     testimonial:
-//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-//     name: 'Lisa Wang',
-//     designation: 'CTO',
-//     company: '456 Enterprises',
-//     image: 'https://randomuser.me/api/portraits/women/6.jpg',
-//   },
-// ];
+const testimonials = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "Sara Lee",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+];
 
 const projects = [
   {
@@ -202,34 +202,35 @@ const projects = [
     live_link: "https://dailynotunasha.com/",
   },
   {
-    name: "Mesmerize: Express Your Love",
-    description: "E-commerce site for customized gifts and more",
+    name: "Edstructure",
+    description: "Edstructure is a complete learning management system.",
     tags: [
       {
-        name: "techsist ltd",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
+        name: "react js",
         color: "blue-text-gradient",
       },
       {
-        name: "rest-api",
+        name: "SCSS",
         color: "green-text-gradient",
       },
       {
-        name: "material-Ui",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-quary",
+        name: "Bootstrap",
         color: "blue-text-gradient",
       },
+      {
+        name: "rest api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "react quary",
+        color: "pink-text-gradient",
+      },
     ],
-    image: image1,
+    image: image10,
     source_code_link: "",
-    live_link: "https://mesmerizebd.com/",
+    live_link: "https://edstructure.com/home",
   },
+
   {
     name: "XYZ Engine",
     description:
@@ -333,56 +334,7 @@ const projects = [
     source_code_link: "",
     live_link: "",
   },
-  {
-    name: "Edstructure",
-    description: "Edstructure is a complete learning management system.",
-    tags: [
-      {
-        name: "react js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "SCSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rest api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "react quary",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image10,
-    source_code_link: "",
-    live_link: "https://edstructure.com/home",
-  },
-  {
-    name: "Downtownbd",
-    description: "This project is based on resturent menu fully responsive.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image7,
-    source_code_link: "https://github.com/iamzubair6/Simple-menu-vite",
-    live_link: "https://www.downtownbd.xyz/",
-  },
+
   {
     name: "Mesmerize Dashboard",
     description:
@@ -413,31 +365,56 @@ const projects = [
     source_code_link: "",
     live_link: "",
   },
+
   {
-    name: "Personal portfolio",
-    description:
-      "This is my personal portfolio website for showcasing my work.",
+    name: "Downtownbd",
+    description: "This project is based on resturent menu fully responsive.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "telwind",
+        name: "material-ui",
         color: "green-text-gradient",
       },
       {
         name: "vite",
         color: "pink-text-gradient",
       },
+    ],
+    image: image7,
+    source_code_link: "https://github.com/iamzubair6/Simple-menu-vite",
+    live_link: "https://www.downtownbd.xyz/",
+  },
+  {
+    name: "Mesmerize: Express Your Love",
+    description: "E-commerce site for customized gifts and more",
+    tags: [
       {
-        name: "framer-motion",
+        name: "techsist ltd",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rest-api",
         color: "green-text-gradient",
       },
+      {
+        name: "material-Ui",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-quary",
+        color: "blue-text-gradient",
+      },
     ],
-    image: image4,
-    source_code_link: "https://github.com/iamzubair6/Portfolio",
-    live_link: "",
+    image: image1,
+    source_code_link: "",
+    live_link: "https://mesmerizebd.com/",
   },
   {
     name: "Edstructure Dashboard",
@@ -472,6 +449,32 @@ const projects = [
     source_code_link: "",
     live_link: "",
   },
+  {
+    name: "Personal portfolio",
+    description:
+      "This is my personal portfolio website for showcasing my work.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "telwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "framer-motion",
+        color: "green-text-gradient",
+      },
+    ],
+    image: image4,
+    source_code_link: "https://github.com/iamzubair6/Portfolio",
+    live_link: "",
+  },
 ];
 
-export { experiences, projects, services, technologies };
+export { experiences, projects, services, technologies, testimonials };
