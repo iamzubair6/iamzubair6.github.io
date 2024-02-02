@@ -173,35 +173,6 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Notun Asha",
-    description: "Online news portal of daily notun asha.",
-    tags: [
-      {
-        name: "techsist-ltd",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-quary",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: image2,
-    source_code_link: "",
-    live_link: "https://dailynotunasha.com/",
-  },
-  {
     name: "Edstructure",
     description: "Edstructure is a complete learning management system.",
     tags: [
@@ -229,6 +200,35 @@ const projects = [
     image: image10,
     source_code_link: "",
     live_link: "https://edstructure.com/home",
+  },
+  {
+    name: "Notun Asha",
+    description: "Online news portal of daily notun asha.",
+    tags: [
+      {
+        name: "techsist-ltd",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "rest-api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-quary",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: image2,
+    source_code_link: "",
+    live_link: "https://dailynotunasha.com/",
   },
 
   {
