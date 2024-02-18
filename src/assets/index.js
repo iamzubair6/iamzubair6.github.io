@@ -28,6 +28,7 @@ import typescript from "./tech/typescript.png";
 import image1 from "./Screenshot_1.png";
 import image10 from "./Screenshot_10.png";
 import image11 from "./Screenshot_11.png";
+import image12 from "./Screenshot_12.png";
 import image2 from "./Screenshot_2.png";
 import image3 from "./Screenshot_3.png";
 import image4 from "./Screenshot_4.png";
@@ -60,6 +61,7 @@ export {
   image1,
   image10,
   image11,
+  image12,
   image2,
   image3,
   image4,

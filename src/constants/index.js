@@ -8,6 +8,7 @@ import {
   image1,
   image10,
   image11,
+  image12,
   image2,
   image3,
   image4,
@@ -200,6 +201,35 @@ const projects = [
     image: image10,
     source_code_link: "",
     live_link: "https://edstructure.com/home",
+  },
+  {
+    name: "Rongdhonu Group",
+    description: "A Company Portfolio Website of Rongdhonu Group.",
+    tags: [
+      {
+        name: "react js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Material UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Swiper",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react-router-dom",
+        color: "green-text-gradient",
+      },
+      {
+        name: "workbox-routing",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: image12,
+    source_code_link: "",
+    live_link: "https://www.rongdhanugroup.com/",
   },
   {
     name: "Notun Asha",
