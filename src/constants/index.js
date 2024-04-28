@@ -9,6 +9,8 @@ import {
   image10,
   image11,
   image12,
+  image13,
+  image14,
   image2,
   image3,
   image4,
@@ -123,10 +125,10 @@ const experiences = [
     iconBg: "#383E56",
     date: "Novemeber 2022 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Develop user-friendly web interfaces using React.js and related libraries.",
+      "Set up secure login systems for user authentication for protection and privacy.",
+      "Created validation systems for accurate user inputs.",
+      "Developed organized and user-friendly data tables for easy data sorting and filtering.",
     ],
   },
   {
@@ -259,6 +261,70 @@ const projects = [
     image: image2,
     source_code_link: "",
     live_link: "https://dailynotunasha.com/",
+  },
+  {
+    name: "Uxpro Labs",
+    description:
+      "Online land/property selling website. Where user can register by user role like Seller, Buyer, Landlord, Tenant, login, post property, buy property, sell property, and search property.",
+    tags: [
+      {
+        name: "rect js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-hook-form",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "rest-api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-quary",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: image13,
+    source_code_link: "",
+    live_link: "https://myuxpro.com/",
+  },
+  {
+    name: "Borgo",
+    description:
+      "Borgo is a complete learning management system for school, college, university, this service offers users all the nessary features(Account, Material, Live class, Meeting, Events, Noticeboard, Routine, etc.) to manage their education system",
+    tags: [
+      {
+        name: "react js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Ant Design",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "charts",
+        color: "green-text-gradient",
+      },
+      {
+        name: "rest-api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-quary",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: image14,
+    source_code_link: "",
+    live_link: "",
   },
 
   {

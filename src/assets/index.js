@@ -29,6 +29,8 @@ import image1 from "./Screenshot_1.png";
 import image10 from "./Screenshot_10.png";
 import image11 from "./Screenshot_11.png";
 import image12 from "./Screenshot_12.png";
+import image13 from "./Screenshot_13.jpg";
+import image14 from "./Screenshot_14.jpg";
 import image2 from "./Screenshot_2.png";
 import image3 from "./Screenshot_3.png";
 import image4 from "./Screenshot_4.png";
@@ -62,6 +64,8 @@ export {
   image10,
   image11,
   image12,
+  image13,
+  image14,
   image2,
   image3,
   image4,
