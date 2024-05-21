@@ -240,36 +240,7 @@ const projects = [
     source_code_link: "",
     live_link: "https://www.rongdhanugroup.com/",
   },
-  {
-    name: "Notun Asha",
-    description: "Online news portal of daily notun asha.",
-    tags: [
-      {
-        name: "techsist-ltd",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-quary",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: image2,
-    source_code_link: "",
-    live_link: "https://dailynotunasha.com/",
-  },
-  {
+    {
     name: "Uxpro Labs",
     description:
       "Online land/property selling website. Where user can register by user role like Seller, Buyer, Landlord, Tenant, login, post property, buy property, sell property, and search property.",
@@ -299,6 +270,36 @@ const projects = [
     source_code_link: "",
     live_link: "https://myuxpro.com/",
   },
+  {
+    name: "Notun Asha",
+    description: "Online news portal of daily notun asha.",
+    tags: [
+      {
+        name: "techsist-ltd",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "material-ui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "rest-api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "react-quary",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: image2,
+    source_code_link: "",
+    live_link: "https://dailynotunasha.com/",
+  },
+
   {
     name: "Borgo",
     description:
