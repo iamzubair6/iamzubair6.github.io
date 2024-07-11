@@ -11,6 +11,8 @@ import {
   image12,
   image13,
   image14,
+  image15,
+  image16,
   image2,
   image3,
   image4,
@@ -298,6 +300,56 @@ const projects = [
     image: image2,
     source_code_link: "",
     live_link: "https://dailynotunasha.com/",
+  },
+  {
+    name: "Luxury Catering",
+    description: "For the first time in Bangladesh, Luxury Catering presents to you a complete modern Catering solution consisting of Your Events: A complete catering solution.",
+    tags: [
+      {
+        name: "React js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vite",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: image16,
+    source_code_link: "https://github.com/iamzubair6/luxury-catering",
+    live_link: "https://luxury-catering.vercel.app/",
+  },
+  {
+    name: "Swiftcart",
+    description: "A complete e-commerce solution created with next js and typescript and for batabase prisma orm used.",
+    tags: [
+      {
+        name: "Next js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Prisma",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: image15,
+    source_code_link: "https://github.com/iamzubair6/next-js-ecommerce",
+    live_link: "",
   },
 
   {
