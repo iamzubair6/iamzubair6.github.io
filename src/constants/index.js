@@ -13,6 +13,7 @@ import {
   image14,
   image15,
   image16,
+  image17,
   image2,
   image3,
   image4,
@@ -31,7 +32,7 @@ import {
   techsist,
   threejs,
   typescript,
-  web,
+  web
 } from "../assets";
 
 export const navLinks = [
@@ -184,6 +185,35 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Umar Education",
+    description: "Umar Education is platform that provides abroard education consultancy.",
+    tags: [
+      {
+        name: "Next js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Material Ui",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Context Api",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rest api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next Router",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: image17,
+    source_code_link: "",
+    live_link: "https://umar-eg.com/",
+  },
+  {
     name: "Edstructure",
     description: "Edstructure is a complete learning management system.",
     tags: [
@@ -242,7 +272,7 @@ const projects = [
     source_code_link: "",
     live_link: "https://www.rongdhanugroup.com/",
   },
-    {
+  {
     name: "Uxpro Labs",
     description:
       "Online land/property selling website. Where user can register by user role like Seller, Buyer, Landlord, Tenant, login, post property, buy property, sell property, and search property.",

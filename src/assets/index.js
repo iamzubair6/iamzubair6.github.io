@@ -33,6 +33,7 @@ import image13 from "./Screenshot_13.webp";
 import image14 from "./Screenshot_14.webp";
 import image15 from "./Screenshot_15.webp";
 import image16 from "./Screenshot_16.webp";
+import image17 from "./Screenshot_17.png";
 import image2 from "./Screenshot_2.webp";
 import image3 from "./Screenshot_3.webp";
 import image4 from "./Screenshot_4.webp";
@@ -70,6 +71,7 @@ export {
   image14,
   image15,
   image16,
+  image17,
   image2,
   image3,
   image4,
