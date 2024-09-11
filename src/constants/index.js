@@ -240,8 +240,8 @@ const projects = [
     ],
     image: image10,
     source_code_link: "",
-    // live_link: "https://edstructure.com/home",
-    live_link: "https://edstructure-frontend-v2.pages.dev/",
+    live_link: "https://edstructure.com",
+    // live_link: "https://edstructure-frontend-v2.pages.dev/",
   },
   {
     name: "Rongdhonu Group",
