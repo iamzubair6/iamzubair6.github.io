@@ -354,7 +354,7 @@ const projects = [
     ],
     image: image16,
     source_code_link: "https://github.com/iamzubair6/luxury-catering",
-    live_link: "https://luxury-catering.vercel.app/",
+    live_link: "https://radwas.com/",
   },
   {
     name: "Swiftcart",
@@ -379,7 +379,7 @@ const projects = [
     ],
     image: image15,
     source_code_link: "https://github.com/iamzubair6/next-js-ecommerce",
-    live_link: "",
+    live_link: "https://cartswift.vercel.app/",
   },
 
   {
