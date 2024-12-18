@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import { useState } from "react";
 import cv from "../assets/RESUME_ZUBAIR_RAHMAN.pdf";
 import { styles } from "../styles";
@@ -81,12 +81,46 @@ const Hero = () => {
     });
 
     return (
-      <div key={lineNumber} className="flex">
-        <span className="w-8 text-right pr-4 text-[#4B5263] select-none">
+      <motion.div
+        key={lineNumber}
+        className="flex"
+        initial={{
+          opacity: 0,
+          x: -10,
+          filter: "blur(2px)",
+        }}
+        animate={{
+          opacity: 1,
+          x: 0,
+          filter: "blur(0px)",
+        }}
+        transition={{
+          duration: 0.5,
+          delay: lineNumber * 0.15, // Sequential delay for each line
+          ease: [0.25, 0.25, 0, 1], // Custom easing for smooth format effect
+        }}
+      >
+        <motion.span
+          className="w-8 text-right pr-4 text-[#4B5263] select-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 0.5 }}
+          transition={{ delay: lineNumber * 0.15 + 0.2 }}
+        >
           {lineNumber}
-        </span>
-        <span className="text-[#ABB2BF]">{parts}</span>
-      </div>
+        </motion.span>
+        <motion.span
+          className="text-[#ABB2BF]"
+          initial={{ letterSpacing: "4px", opacity: 0.5 }}
+          animate={{ letterSpacing: "normal", opacity: 1 }}
+          transition={{
+            delay: lineNumber * 0.15,
+            duration: 0.4,
+            ease: "easeOut",
+          }}
+        >
+          {parts}
+        </motion.span>
+      </motion.div>
     );
   };
 
@@ -140,24 +174,30 @@ const Hero = () => {
           {/* Right Column - Code Editor */}
           <motion.div
             className="relative rounded-lg bg-[#282C34]/70 backdrop-blur-sm border border-[#915EFF]/30 shadow-xl h-[300px] md:h-[400px] overflow-hidden mt-4 md:mt-0"
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
           >
             {/* VS Code-like title bar */}
-            <div className="bg-[#21252B]/80 backdrop-blur-sm px-4 py-2 flex items-center justify-between">
+            <motion.div
+              className="bg-[#21252B]/80 backdrop-blur-sm px-4 py-2 flex items-center justify-between"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.2 }}
+            >
               <div className="flex gap-2">
                 <div className="w-3 h-3 rounded-full bg-[#FF5F56]" />
                 <div className="w-3 h-3 rounded-full bg-[#FFBD2E]" />
                 <div className="w-3 h-3 rounded-full bg-[#27C93F]" />
               </div>
               <div className="text-[#6B717D] text-xs">FrontendDeveloper.js</div>
-            </div>
+            </motion.div>
 
-            {/* Code content with custom scrollbar */}
+            {/* Code content container */}
             <div
-              className="p-4 font-mono text-sm leading-6 overflow-auto h-[calc(100%-2.5rem)] 
-              scrollbar-thin scrollbar-thumb-[#915EFF]/20 scrollbar-track-transparent hover:scrollbar-thumb-[#915EFF]/40
+              className="p-4 font-mono text-sm leading-6 overflow-auto h-[calc(100%-2.5rem)]
+              scrollbar-thin scrollbar-thumb-[#915EFF]/20 scrollbar-track-transparent 
+              hover:scrollbar-thumb-[#915EFF]/40
               [&::-webkit-scrollbar]:w-2
               [&::-webkit-scrollbar-thumb]:rounded-full
               [&::-webkit-scrollbar-track]:transparent
