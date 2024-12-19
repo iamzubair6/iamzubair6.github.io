@@ -10,6 +10,7 @@ import {
   Works,
 } from "./components";
 import StarsCanvas from "./components/canvas/StarBackground";
+import SEOChecker from "./components/SEOChecker";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
           {/* <StarsCanvas /> */}
         </div>
       </div>
+      <SEOChecker />
     </BrowserRouter>
   );
 };
