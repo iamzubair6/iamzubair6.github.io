@@ -1,7 +1,7 @@
-import { motion, useAnimation } from "framer-motion";
-import { useState } from "react";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import cv from "../assets/RESUME_ZUBAIR_RAHMAN.pdf";
-import { styles } from "../styles";
 
 const Hero = () => {
   const [copied, setCopied] = useState(false);
@@ -124,25 +124,132 @@ const Hero = () => {
     );
   };
 
+  const socialLinks = [
+    {
+      name: "GitHub",
+      icon: <FaGithub className="w-6 h-6" />,
+      url: "https://github.com/yourusername",
+    },
+    {
+      name: "LinkedIn",
+      icon: <FaLinkedin className="w-6 h-6" />,
+      url: "https://linkedin.com/in/yourusername",
+      color: "hover:text-[#0A66C2]",
+      bgHover: "hover:bg-[#0A66C2]/10",
+    },
+    {
+      name: "Twitter",
+      icon: <FaTwitter className="w-6 h-6" />,
+      url: "https://twitter.com/yourusername",
+      color: "hover:text-[#1DA1F2]",
+      bgHover: "hover:bg-[#1DA1F2]/10",
+    },
+  ];
+
+  // Typing effect text
+  const roles = ["Frontend Developer", "UI/UX Enthusiast", "React Specialist"];
+  const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isTyping, setIsTyping] = useState(true);
+
+  useEffect(() => {
+    let timeout;
+    const currentRole = roles[currentRoleIndex];
+
+    if (isTyping) {
+      if (displayText.length < currentRole.length) {
+        timeout = setTimeout(() => {
+          setDisplayText(currentRole.slice(0, displayText.length + 1));
+        }, 100);
+      } else {
+        timeout = setTimeout(() => setIsTyping(false), 2000);
+      }
+    } else {
+      if (displayText.length > 0) {
+        timeout = setTimeout(() => {
+          setDisplayText(displayText.slice(0, -1));
+        }, 50);
+      } else {
+        setCurrentRoleIndex((prev) => (prev + 1) % roles.length);
+        setIsTyping(true);
+      }
+    }
+
+    return () => clearTimeout(timeout);
+  }, [displayText, isTyping, currentRoleIndex]);
+
   return (
-    <section className={`relative w-full min-h-screen mx-auto overflow-hidden`}>
-      {/* Main two-column layout */}
+    <section className="relative w-full min-h-screen mx-auto overflow-hidden">
+      {/* Animated background */}
+      <motion.div
+        className="absolute inset-0 -z-10"
+        initial={{ backgroundPosition: "0% 0%" }}
+        animate={{
+          backgroundPosition: ["0% 0%", "100% 100%"],
+        }}
+        transition={{
+          duration: 20,
+          ease: "linear",
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
+        style={{
+          background:
+            "radial-gradient(circle at center, rgba(145, 94, 255, 0.05) 0%, transparent 70%)",
+          filter: "blur(100px)",
+        }}
+      />
+
+      {/* Interactive background dots */}
+      <div className="absolute inset-0 -z-5">
+        {[...Array(20)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 bg-[#915EFF]/20 rounded-full"
+            initial={{
+              x: Math.random() * window.innerWidth,
+              y: Math.random() * window.innerHeight,
+            }}
+            animate={{
+              scale: [1, 1.5, 1],
+              opacity: [0.3, 0.8, 0.3],
+            }}
+            transition={{
+              duration: 3 + Math.random() * 2,
+              repeat: Infinity,
+              delay: Math.random() * 2,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Main content */}
       <div className="pt-[60px] md:pt-[120px] max-w-[1440px] mx-auto px-4 md:px-6 pb-24 md:pb-0">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 h-full pt-10 md:pt-20">
           {/* Left Column */}
           <div className="z-10 space-y-4 md:space-y-8">
             <div>
-              <h1
-                className={`${styles.heroHeadText} text-white text-[32px] md:text-[40px] lg:text-[50px]`}
-              >
+              <h1 className="text-white font-black text-[32px] sm:text-[40px] lg:text-[55px] lg:leading-[98px]">
                 Hi, I'm <span className="text-[#915EFF]">Zubair Rahman</span>
               </h1>
-              <p className="text-white text-base md:text-lg mt-3 md:mt-6 leading-relaxed max-w-[600px]">
+              <p className="text-[#DFDFD9] font-medium text-[16px] sm:text-[18px] lg:text-[22px] mt-2 tracking-wide">
                 Professional frontend developer specializing in building
                 exceptional digital experiences. Passionate about creating
                 responsive and user-friendly web applications.
               </p>
             </div>
+
+            {/* Typing effect subtitle */}
+            <motion.div
+              className="h-8 overflow-hidden"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+            >
+              <p className="text-[#915EFF] text-xl font-medium">
+                {displayText}
+                <span className="animate-blink">|</span>
+              </p>
+            </motion.div>
 
             <div className="flex flex-col sm:flex-row gap-3 md:gap-4 w-full sm:w-auto">
               <motion.a
@@ -169,6 +276,30 @@ const Hero = () => {
                 )}
               </motion.button>
             </div>
+
+            {/* Social links with brand colors */}
+            <motion.div
+              className="flex gap-4 mt-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5 }}
+            >
+              {socialLinks.map((link) => (
+                <motion.a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`p-3 bg-[#915EFF]/10 rounded-lg transition-all duration-300
+                    ${link.bgHover} flex items-center justify-center
+                    text-white/70 ${link.color}`}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {link.icon}
+                </motion.a>
+              ))}
+            </motion.div>
           </div>
 
           {/* Right Column - Code Editor */}

@@ -32,7 +32,7 @@ import {
   techsist,
   threejs,
   typescript,
-  web
+  web,
 } from "../assets";
 
 export const navLinks = [
@@ -52,8 +52,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
+  },
+  {
+    title: "React.js Development",
+    icon: reactjs,
+  },
+  {
+    title: "Next.js Development",
+    icon: next,
+  },
+  {
+    title: "UI/UX Implementation",
+    icon: figma,
   },
 ];
 
@@ -186,7 +198,8 @@ const testimonials = [
 const projects = [
   {
     name: "Umar Education",
-    description: "Umar Education is platform that provides abroard education consultancy.",
+    description:
+      "Umar Education is platform that provides abroard education consultancy.",
     tags: [
       {
         name: "Next js",
@@ -333,7 +346,8 @@ const projects = [
   },
   {
     name: "Luxury Catering",
-    description: "For the first time in Bangladesh, Luxury Catering presents to you a complete modern Catering solution consisting of Your Events: A complete catering solution.",
+    description:
+      "For the first time in Bangladesh, Luxury Catering presents to you a complete modern Catering solution consisting of Your Events: A complete catering solution.",
     tags: [
       {
         name: "React js",
@@ -358,7 +372,8 @@ const projects = [
   },
   {
     name: "Swiftcart",
-    description: "A complete e-commerce solution created with next js and typescript and for batabase prisma orm used.",
+    description:
+      "A complete e-commerce solution created with next js and typescript and for batabase prisma orm used.",
     tags: [
       {
         name: "Next js",
@@ -664,4 +679,3 @@ const projects = [
 ];
 
 export { experiences, projects, services, technologies, testimonials };
-
