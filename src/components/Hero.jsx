@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 import cv from "../assets/RESUME_ZUBAIR_RAHMAN.pdf";
 
 const Hero = () => {
@@ -128,19 +128,19 @@ const Hero = () => {
     {
       name: "GitHub",
       icon: <FaGithub className="w-6 h-6" />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/iamzubair6",
     },
     {
       name: "LinkedIn",
       icon: <FaLinkedin className="w-6 h-6" />,
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://linkedin.com/in/iamzubair6",
       color: "hover:text-[#0A66C2]",
       bgHover: "hover:bg-[#0A66C2]/10",
     },
     {
       name: "Twitter",
-      icon: <FaTwitter className="w-6 h-6" />,
-      url: "https://twitter.com/yourusername",
+      icon: <FaFacebook className="w-6 h-6" />,
+      url: "https://www.facebook.com/zubairrahman.dip/",
       color: "hover:text-[#1DA1F2]",
       bgHover: "hover:bg-[#1DA1F2]/10",
     },
