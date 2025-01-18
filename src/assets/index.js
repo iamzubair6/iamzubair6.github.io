@@ -34,7 +34,10 @@ import image14 from "./Screenshot_14.webp";
 import image15 from "./Screenshot_15.webp";
 import image16 from "./Screenshot_16.webp";
 import image17 from "./Screenshot_17.png";
+import image18 from "./Screenshot_18.webp";
+import image19 from "./Screenshot_19.webp";
 import image2 from "./Screenshot_2.webp";
+import image20 from "./Screenshot_20.webp";
 import image3 from "./Screenshot_3.webp";
 import image4 from "./Screenshot_4.webp";
 import image5 from "./Screenshot_5.webp";
@@ -72,7 +75,10 @@ export {
   image15,
   image16,
   image17,
+  image18,
+  image19,
   image2,
+  image20,
   image3,
   image4,
   image5,
@@ -97,6 +103,5 @@ export {
   techsist,
   threejs,
   typescript,
-  web
+  web,
 };
-

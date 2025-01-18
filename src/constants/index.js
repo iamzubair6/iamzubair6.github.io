@@ -14,7 +14,10 @@ import {
   image15,
   image16,
   image17,
+  image18,
+  image19,
   image2,
+  image20,
   image3,
   image4,
   image5,
@@ -225,6 +228,120 @@ const projects = [
     image: image17,
     source_code_link: "",
     live_link: "https://umar-eg.com/",
+  },
+  {
+    name: "My Maid Service",
+    description:
+      "A comprehensive web platform for managing cleaning services and bookings. This platform connects cleaning service providers with customers who need residential or commercial cleaning services.",
+    tags: [
+      {
+        name: "Next js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Context Api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Fraemr Motion",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rest api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next Router",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: image19,
+    source_code_link: "",
+    live_link: "https://mymaidsupport.com/",
+  },
+  {
+    name: "Metrocem Automobiles",
+    description:
+      "A modern web application for MetroCem Automobiles, a leading automotive dealership management system. This frontend application provides a user-friendly interface for managing vehicle inventory, sales, service appointments, and customer relationships.",
+    tags: [
+      {
+        name: "Next js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Context Api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Fraemr Motion",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rest api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next Router",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: image18,
+    source_code_link: "",
+    live_link: "https://automobiles.techsistltd.com/?lang=en",
+  },
+  {
+    name: "Metrocem Ispat",
+    description:
+      "A modern web application for Metrocem Ispat, providing a user interface for managing steel manufacturing operations and business processes.",
+    tags: [
+      {
+        name: "Next js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Context Api",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Shadcn UI",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Fraemr Motion",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "rest api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next Router",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: image20,
+    source_code_link: "",
+    live_link: "https://ispat.techsistltd.com/?lang=en",
   },
   {
     name: "Edstructure",
