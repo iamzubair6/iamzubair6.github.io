@@ -165,6 +165,15 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
+      "I have had the distinct pleasure of hiring and working with Zubair for almost 2 years, and watching his incredible journey from an intern to a rock-solid senior frontend developer has been nothing short of inspiring. What sets him apart is not just his technical expertise but his problem-solving mindset, attention to detail, and strong work ethic — often stepping up to take ownership of complex projects.",
+    name: "Rafeed Khan",
+    designation: "Managing Director",
+    company: "Techsist Ltd",
+    image:
+      "https://ui-avatars.com/api/?name=Rafeed+Khan&background=1a7f5a&color=fff",
+  },
+  {
+    testimonial:
       "I've worked closely with Zubair on multiple frontend projects, and he has been one of the most dependable React engineers on our team. He takes ownership of tasks, writes maintainable code, and collaborates effectively across backend, QA, and design teams.",
     name: "Gm Zulkar Nine",
     designation: "Software Engineer & System Architect",
