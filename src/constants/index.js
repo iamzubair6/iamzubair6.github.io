@@ -7,24 +7,10 @@ import {
   html,
   image1,
   image10,
-  image11,
-  image12,
-  image13,
-  image14,
-  image15,
-  image16,
   image17,
   image18,
   image19,
-  image2,
   image20,
-  image3,
-  image4,
-  image5,
-  image6,
-  image7,
-  image8,
-  image9,
   javascript,
   material,
   mongodb,
@@ -37,6 +23,10 @@ import {
   typescript,
   web,
 } from "../assets";
+
+import rajulaw from "../assets/company/rajulaw.png";
+import maison from "../assets/maison.png";
+import ouropero from "../assets/ouropero.png";
 
 export const navLinks = [
   {
@@ -113,10 +103,6 @@ const technologies = [
     name: "Tailwind CSS",
     icon: tailwind,
   },
-  // {
-  //   name: 'Node JS',
-  //   icon: nodejs,
-  // },
   {
     name: "MongoDB",
     icon: mongodb,
@@ -137,36 +123,41 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    company_name: "Techsist Ltd",
+    title: "Software Engineer (Frontend)",
+    company_name:
+      "Raju Law – US Immigration & Investment Attorneys · USA (Remote)",
+    icon: rajulaw,
+    iconBg: "#ffffff",
+    date: "April 2025 - Present",
+    points: [
+      "Build and maintain the firm's HRM and CRM platforms, used daily by ~150 active users, owning frontend delivery from wireframe to production.",
+      "Developed Smart Assist, an OpenAI-powered assistant inside the HRM that answers natural-language questions over HR data, replacing manual navigation across modules.",
+      "Restored the failing AWS Amplify deployment pipeline and cut production build time ~18% by lazy-loading heavy dependencies and pruning the build graph.",
+      "Build the frontend of OurOpero (ouropero.com), the firm's all-in-one project & workflow management SaaS.",
+      "Built a shared, typed component library standardizing forms (React Hook Form + Zod), data tables, and JWT auth flows.",
+    ],
+  },
+  {
+    title: "Software Engineer II",
+    company_name: "Techsist Ltd · Dhaka, Bangladesh",
     icon: techsist,
     iconBg: "#383E56",
-    date: "Novemeber 2022 - Present",
+    date: "November 2022 - April 2025",
     points: [
-      "Develop user-friendly web interfaces using React.js and related libraries.",
-      "Set up secure login systems for user authentication for protection and privacy.",
-      "Created validation systems for accurate user inputs.",
-      "Developed organized and user-friendly data tables for easy data sorting and filtering.",
-      "Optimize web applications for maximum speed and scalability.",
-      "Designed scalable project structures and maintained a clean, easy-to-read codebase.",
-      "Integrate APIs and third-party services to enhance the functionality of web applications.",
-      "Ensure cross-browser compatibility and responsiveness across multiple devices.",
+      "Progressed from Intern to Software Engineer II through five promotions in 2.5 years.",
+      "Delivered 15+ production client applications end-to-end, including dealership management (Metrocem Automobiles), manufacturing operations (Metrocem Ispat), learning management systems (Edstructure, Borgo), and e-commerce (Mesmerize).",
+      "Implemented secure JWT authentication, role-based access, input validation, and complex sortable/filterable data tables reused across projects.",
+      "Managed server state with TanStack Query and built responsive, cross-browser UIs with Material-UI, Ant Design, and Tailwind CSS.",
     ],
   },
   {
     title: "Jr. Service Engineer",
-    company_name: "AL-Fatah International",
+    company_name: "AL-Fatah International · Dhaka, Bangladesh",
     icon: alfatah,
     iconBg: "gray",
     date: "March 2022 - October 2022",
     points: [
-      "Interact with customers in a professional and courteous manner.",
-      "Address customer inquiries, concerns, and complaints promptly and effectively.",
-      "Diagnose problems accurately and efficiently to determine appropriate solutions.",
-      "Utilize technical expertise to troubleshoot and resolve issues promptly, minimizing downtime for clients.",
-      "Conduct routine maintenance and servicing of equipment according to manufacturer specifications.",
-      "Manage inventory levels effectively to ensure availability of necessary parts and supplies.",
-      "Conduct regular inventory checks and coordinate replenishment as needed to support service operations.",
+      "Customer-facing technical support and equipment servicing role; transitioned into software engineering the same year.",
     ],
   },
 ];
@@ -174,94 +165,64 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I've worked closely with Zubair on multiple frontend projects, and he has been one of the most dependable React engineers on our team. He takes ownership of tasks, writes maintainable code, and collaborates effectively across backend, QA, and design teams.",
+    name: "Gm Zulkar Nine",
+    designation: "Software Engineer & System Architect",
+    company: "Raju Law",
+    image:
+      "https://ui-avatars.com/api/?name=Zulkar+Nine&background=1a4f8a&color=fff",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Zubair consistently demonstrated a strong command of frontend development — the interfaces he delivered were clean, responsive, and user-focused. Working alongside him as a backend engineer, I always found our integration seamless, thanks to his clear communication and proactive approach.",
+    name: "MD Abdul Alim",
+    designation: "Software Engineer (Backend)",
+    company: "Raju Law",
+    image:
+      "https://ui-avatars.com/api/?name=Abdul+Alim&background=915EFF&color=fff",
   },
 ];
 
 const projects = [
   {
-    name: "Umar Education",
+    name: "OurOpero",
     description:
-      "Umar Education is platform that provides abroard education consultancy.",
+      "All-in-one project & workflow management SaaS built at Raju Law — boards, docs, dashboards, automations, and time tracking in one workspace. I build the frontend.",
     tags: [
-      {
-        name: "Next js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Material Ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Context Api",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rest api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next Router",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "shadcn/ui", color: "pink-text-gradient" },
+      { name: "TanStack Query", color: "orange-text-gradient" },
     ],
-    image: image17,
+    image: ouropero,
     source_code_link: "",
-    live_link: "https://umar-eg.com/",
+    live_link: "https://www.ouropero.com/",
   },
   {
-    name: "My Maid Service",
+    name: "Maison",
     description:
-      "A comprehensive web platform for managing cleaning services and bookings. This platform connects cleaning service providers with customers who need residential or commercial cleaning services.",
+      "Open-source headless fashion e-commerce + CMS: storefront pages composed from reorderable content blocks, guest checkout, promo codes, and parcel tracking on a Medusa.js commerce engine. Bun monorepo with Vitest and Playwright tests.",
     tags: [
-      {
-        name: "Next js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Context Api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Shadcn UI",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Fraemr Motion",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rest api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next Router",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "Medusa.js", color: "pink-text-gradient" },
+      { name: "Prisma", color: "orange-text-gradient" },
+      { name: "Tailwind CSS", color: "blue-text-gradient" },
+    ],
+    image: maison,
+    source_code_link: "https://github.com/iamzubair6/medusa-e-ecommerce",
+    live_link: "https://medusa-e-ecommerce-web.vercel.app/",
+  },
+  {
+    name: "My Maid Support",
+    description:
+      "Cleaning-services booking platform built solo for an Australian client — marketing site plus service booking flows, with a focus on usability and conversion.",
+    tags: [
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "shadcn/ui", color: "pink-text-gradient" },
+      { name: "Tailwind CSS", color: "orange-text-gradient" },
+      { name: "Framer Motion", color: "blue-text-gradient" },
     ],
     image: image19,
     source_code_link: "",
@@ -270,36 +231,12 @@ const projects = [
   {
     name: "Metrocem Automobiles",
     description:
-      "A modern web application for MetroCem Automobiles, a leading automotive dealership management system. This frontend application provides a user-friendly interface for managing vehicle inventory, sales, service appointments, and customer relationships.",
+      "Dealership management frontend for MetroCem Automobiles — vehicle inventory, sales, service appointments, and customer relationships in a responsive web app.",
     tags: [
-      {
-        name: "Next js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Context Api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Shadcn UI",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Fraemr Motion",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rest api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next Router",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "shadcn/ui", color: "pink-text-gradient" },
+      { name: "REST API", color: "orange-text-gradient" },
     ],
     image: image18,
     source_code_link: "",
@@ -308,490 +245,57 @@ const projects = [
   {
     name: "Metrocem Ispat",
     description:
-      "A modern web application for Metrocem Ispat, providing a user interface for managing steel manufacturing operations and business processes.",
+      "Web application for Metrocem Ispat, providing the UI for managing steel manufacturing operations and business processes.",
     tags: [
-      {
-        name: "Next js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Context Api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Shadcn UI",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Fraemr Motion",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rest api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next Router",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "green-text-gradient" },
+      { name: "shadcn/ui", color: "pink-text-gradient" },
+      { name: "REST API", color: "orange-text-gradient" },
     ],
     image: image20,
     source_code_link: "",
     live_link: "https://ispat.techsistltd.com/?lang=en",
   },
   {
-    name: "Edstructure",
-    description: "Edstructure is a complete learning management system.",
+    name: "Umar Education",
+    description:
+      "Server-side-rendered, SEO-optimized platform for a study-abroad education consultancy.",
     tags: [
-      {
-        name: "react js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "SCSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rest api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "react quary",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js (SSR)", color: "blue-text-gradient" },
+      { name: "Material-UI", color: "green-text-gradient" },
+      { name: "REST API", color: "pink-text-gradient" },
+    ],
+    image: image17,
+    source_code_link: "",
+    live_link: "https://umar-eg.com/",
+  },
+  {
+    name: "Edstructure",
+    description:
+      "Complete learning management system for schools and universities — courses, materials, and student management.",
+    tags: [
+      { name: "React", color: "blue-text-gradient" },
+      { name: "SCSS", color: "green-text-gradient" },
+      { name: "Bootstrap", color: "pink-text-gradient" },
+      { name: "TanStack Query", color: "orange-text-gradient" },
     ],
     image: image10,
     source_code_link: "",
     live_link: "https://edstructure.com",
-    // live_link: "https://edstructure-frontend-v2.pages.dev/",
-  },
-  {
-    name: "Rongdhonu Group",
-    description: "A Company Portfolio Website of Rongdhonu Group.",
-    tags: [
-      {
-        name: "react js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Material UI",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Swiper",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react-router-dom",
-        color: "green-text-gradient",
-      },
-      {
-        name: "workbox-routing",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image12,
-    source_code_link: "",
-    live_link: "https://www.rongdhanugroup.com/",
-  },
-  {
-    name: "Uxpro Labs",
-    description:
-      "Online land/property selling website. Where user can register by user role like Seller, Buyer, Landlord, Tenant, login, post property, buy property, sell property, and search property.",
-    tags: [
-      {
-        name: "rect js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-hook-form",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-quary",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: image13,
-    source_code_link: "",
-    live_link: "https://myuxpro.com/",
-  },
-  {
-    name: "Notun Asha",
-    description: "Online news portal of daily notun asha.",
-    tags: [
-      {
-        name: "techsist-ltd",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-quary",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: image2,
-    source_code_link: "",
-    live_link: "https://dailynotunasha.com/",
-  },
-  {
-    name: "Luxury Catering",
-    description:
-      "For the first time in Bangladesh, Luxury Catering presents to you a complete modern Catering solution consisting of Your Events: A complete catering solution.",
-    tags: [
-      {
-        name: "React js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image16,
-    source_code_link: "https://github.com/iamzubair6/luxury-catering",
-    live_link: "https://radwas.com/",
-  },
-  {
-    name: "Swiftcart",
-    description:
-      "A complete e-commerce solution created with next js and typescript and for batabase prisma orm used.",
-    tags: [
-      {
-        name: "Next js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tailwind CSS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Prisma",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image15,
-    source_code_link: "https://github.com/iamzubair6/next-js-ecommerce",
-    live_link: "https://cartswift.vercel.app/",
-  },
-
-  {
-    name: "Borgo",
-    description:
-      "Borgo is a complete learning management system for school, college, university, this service offers users all the nessary features(Account, Material, Live class, Meeting, Events, Noticeboard, Routine, etc.) to manage their education system",
-    tags: [
-      {
-        name: "react js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Ant Design",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "charts",
-        color: "green-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-quary",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image14,
-    source_code_link: "",
-    live_link: "",
-  },
-
-  {
-    name: "XYZ Engine",
-    description:
-      "This project is about data parse and calculation from CSV file. User can upload CSV file that have X,Y,Z row, after uploading file internal calculation will happen and user will get max and min values of X,Y,Z. By uploading CSV file user can see chart",
-    tags: [
-      {
-        name: "react js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Material-ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "react router",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "chart js",
-        color: "green-text-gradient",
-      },
-    ],
-    image: image8,
-    source_code_link: "https://github.com/iamzubair6/xyz-engine",
-    live_link: "https://xyz-battery-engine.vercel.app/",
-  },
-  {
-    name: "Sortable Image Gallery",
-    description:
-      "This project is about sortable image gallery. Here user can sort image by position and active image will be highlight with big width, user can aslo select multiple image and delete them",
-    tags: [
-      {
-        name: "react js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "SCSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Dnd kit",
-        color: "green-text-gradient",
-      },
-      {
-        name: "",
-        color: "green-text-gradient",
-      },
-    ],
-    image: image11,
-    source_code_link: "https://github.com/iamzubair6/sortable-image-grid",
-    live_link: "https://sortable-image-grid.vercel.app/",
-  },
-  {
-    name: "Multiverse-Madness",
-    description: "This project is about virtual reality.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "framer-motion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "telwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image5,
-    source_code_link: "https://github.com/iamzubair6/multiverse-madness-nextjs",
-    live_link: "https://multiverse-madness-nextjs.vercel.app/",
-  },
-  {
-    name: "Corber | Dashboard",
-    description:
-      "This is complete dashboard system for manageing medicine and crops data. Here admin can upload corps image with complete details and crops disease. Admin can also uload and manage medicine data. This dashboad have create, edit, delete option with full dynamic state",
-    tags: [
-      {
-        name: "react js",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rest api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "react quary",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image9,
-    source_code_link: "",
-    live_link: "",
-  },
-
-  {
-    name: "Mesmerize Dashboard",
-    description:
-      "A full featured dashboard for managing Mesmerize admin panel.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-quary",
-        color: "green-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "blue-text-gradient",
-      },
-    ],
-    image: image3,
-    source_code_link: "",
-    live_link: "",
-  },
-
-  {
-    name: "Downtownbd",
-    description: "This project is based on resturent menu fully responsive.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "material-ui",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: image7,
-    source_code_link: "https://github.com/iamzubair6/Simple-menu-vite",
-    live_link: "https://www.downtownbd.xyz/",
   },
   {
     name: "Mesmerize: Express Your Love",
-    description: "E-commerce site for customized gifts and more",
+    description:
+      "E-commerce platform for customized gifts, from product browsing to checkout.",
     tags: [
-      {
-        name: "techsist ltd",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "material-Ui",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "react-quary",
-        color: "blue-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "Material-UI", color: "green-text-gradient" },
+      { name: "TanStack Query", color: "pink-text-gradient" },
+      { name: "REST API", color: "orange-text-gradient" },
     ],
     image: image1,
     source_code_link: "",
     live_link: "https://mesmerizebd.com/",
-  },
-  {
-    name: "Edstructure Dashboard",
-    description: "A complete education management system",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Bootstrap",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "rest-api",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "react-quary",
-        color: "green-text-gradient",
-      },
-    ],
-    image: image6,
-    source_code_link: "",
-    live_link: "",
-  },
-  {
-    name: "Personal portfolio",
-    description:
-      "This is my personal portfolio website for showcasing my work.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "telwind",
-        color: "green-text-gradient",
-      },
-      {
-        name: "vite",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "framer-motion",
-        color: "green-text-gradient",
-      },
-    ],
-    image: image4,
-    source_code_link: "https://github.com/iamzubair6/Portfolio",
-    live_link: "",
   },
 ];
 

@@ -21,9 +21,9 @@ const Hero = () => {
 
   getSkills() {
     return {
-      frontend: ["React", "TailwindCSS", "JavaScript"],
-      tools: ["Git", "VS Code", "Figma"],
-      currentlyLearning: "Three.js"
+      frontend: ["React", "Next.js", "TypeScript"],
+      tools: ["Git", "Figma", "TailwindCSS"],
+      currentlyBuilding: "SaaS with AI features"
     };
   }
 }`;
